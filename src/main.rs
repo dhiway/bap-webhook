@@ -1,6 +1,6 @@
 use tokio::sync::watch;
 
-use bap_adapter::{
+use bap_webhook::{
     config::AppConfig, http::http_server::start_http_server, utils::logging::setup_logging,
 };
 
