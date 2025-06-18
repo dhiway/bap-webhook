@@ -19,7 +19,7 @@ pub struct Context {
     pub timestamp: String,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Serialize)]
 pub struct WebhookPayload {
     pub context: Context,
     pub message: Value,

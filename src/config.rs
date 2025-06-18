@@ -10,8 +10,18 @@ pub struct HttpConfig {
 }
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
+pub struct Bap {
+    pub id: String,
+    pub caller_uri: String,
+    pub domain: String,
+    pub version: String,
+    pub ttl: String,
+}
+
+#[derive(Debug, Serialize, Deserialize, Clone)]
 pub struct AppConfig {
     debug: bool,
+    pub bap: Bap,
     pub http: HttpConfig,
 }
 
