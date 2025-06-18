@@ -1,5 +1,5 @@
 use tracing_appender::{non_blocking::WorkerGuard, rolling};
-use tracing_subscriber::{EnvFilter, fmt, fmt::time::UtcTime, prelude::*};
+use tracing_subscriber::{fmt, fmt::time::UtcTime, prelude::*, EnvFilter};
 
 pub fn setup_logging(log_dir: &str, svc: &str) -> WorkerGuard {
     let log_file_name = format!("{}.log", svc);
