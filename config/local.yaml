@@ -4,7 +4,7 @@ http:
   address: 0.0.0.0
   port: 3008
 
-bpp:
+bap:
    id: "bap.dhiway.com"
    caller_uri: "https://beckn-adapter.dhiway.net/bap/caller"
    domain: "ONDC:TRV10"
